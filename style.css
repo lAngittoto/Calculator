@@ -1,0 +1,305 @@
+body{
+  font-family: sans-serif;
+  background-color: rgb(245, 245, 245);
+  max-width: 100%;
+}
+#white_container{
+  width: 20vw;
+  height: 68vh;
+  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(15, 15, 15);
+}
+header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230, 231, 231);
+  gap: 5%;
+
+}
+h1{
+  margin-right: auto;
+  cursor: default;
+}
+section{
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+#black{
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+
+#red{
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(216, 99, 124);
+  cursor: pointer;
+}
+#green{
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(111, 187, 95);
+  cursor: pointer;
+}
+#blue{
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(9, 83, 168);
+  cursor: pointer;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 2.5%;
+}
+
+button{
+  height: 6vh;
+  width: 5vw;
+  margin: 0% auto;
+  cursor: pointer;
+  font-size: 1rem;
+}
+#display{
+width: 18vw;
+margin-left: 3.2%;
+height: 7vh;
+margin-bottom: 5%;
+outline: none;
+cursor: not-allowed;
+font-size: 2rem;
+}
+.name{
+  margin-left: 4%;
+}
+.other{
+  color: red;
+  border: none;
+
+}
+.equal{
+  color: blue;
+}
+.arithmetic{
+  color: blue;
+  font-size: 2rem;
+  background-color: rgb(213, 216, 218);
+  border: none;
+}
+.number{
+  background-color: rgb(233, 233, 233);
+  border: none;
+}
+.dot{
+  font-size: larger;
+
+}
+button:hover{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+  border: 1px solid black;
+}
+button:active{
+  background-color: rgb(243, 241, 241);
+}
+footer{
+  background-color: rgb(230, 231, 231);
+  height: 13vh;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10%;
+  margin-top: 2%;
+}
+#white{
+  background-color: aliceblue;
+  width: 10vw;
+  height: 5vh;
+  cursor: pointer;
+}
+.container_black{
+  width: 20vw;
+  height: 68vh;
+  background-color: rgb(32, 32, 32);
+}
+.name_black{
+  color: rgb(240, 240, 240);
+}
+
+@media (max-width: 900px) {
+  h1{
+    font-size: 2em;
+  }
+  #black{
+    height: 4vh;
+  }
+  #white{
+    height: 4vh;
+  }
+  #red{
+    height: 4vh;
+  }
+  #green{
+    height: 4vh;
+  }
+  #blue{
+    height: 4vh;
+  }
+  #white_container{
+    width: 70vw;
+  }
+  .name{
+    font-size: 1em;
+  }
+  #display{
+    width: 65vw;
+  }
+  button{
+    height: 6vh;
+    width: 20vw;
+    margin: 0% auto;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  footer{
+    font-size: 1.3em;
+    height: 10vh;
+
+  }
+
+}
+
+
+@media screen and (max-width:700px) and (orientation: portrait){
+  h1{
+    font-size: 1.5em;
+  }
+  #black{
+    height: 3vh;
+  }
+  #white{
+    height: 3vh;
+  }
+  #red{
+    height: 3vh;
+  }
+  #green{
+    height: 3vh;
+  }
+  #blue{
+    height: 3vh;
+  }
+  #white_container{
+    width: 90vw;
+  }
+  .name{
+    font-size: 1em;
+  }
+  #display{
+    width: 83vw;
+  }
+  button{
+    height: 6vh;
+    width: 25vw;
+    margin: 0% auto;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  footer{
+    font-size: 1.3em;
+    height: 10vh;
+
+  }
+
+}
+@media screen and (max-width: 360px) and (orientation: portrait){
+  h1{
+    font-size: 1em;
+  }
+  #black{
+    height: 2vh;
+  }
+  #white{
+    height: 2vh;
+  }
+  #red{
+    height: 2vh;
+  }
+  #green{
+    height: 2vh;
+  }
+  #blue{
+    height: 2vh;
+  }
+  #white_container{
+    width: 70vw;
+  }
+  .name{
+    font-size: 1em;
+  }
+  #display{
+    width: 60vw;
+  }
+  button{
+    height: 6vh;
+    width: 20vw;
+    margin: 0% auto;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  footer{
+    font-size: 1em;
+    height: 10vh;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-height: 400px) and (orientation: landscape) {
+  h1{
+    font-size: 1.5em;
+  }
+  #black{
+    height: 3vh;
+  }
+  #white{
+    height: 3vh;
+  }
+  #red{
+    height: 3;
+  }
+  #green{
+    height: 3vh;
+  }
+  #blue{
+    height: 3vh;
+  }
+
+  #white_container{
+    width: 30vw;
+    height:110vh;
+  }
+  .name{
+    font-size: 1em;
+  }
+  #display{
+    width: 26vw;
+  }
+  button{
+    height: 10vh;
+    width: 8vw;
+    margin: 0% auto;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  footer{
+    font-size: 1.3em;
+    height: 13vh;
+
+  }
+
+}
